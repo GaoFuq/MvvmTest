@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_gragh"
+    app:startDestination="@id/fragC">
+    <fragment
+        android:id="@+id/fragA"
+        android:name="com.gfq.mvvmtest.mvvm_fragment.FragA"
+        android:label="fragment_a"
+        tools:layout="@layout/fragment_a" >
+        <action
+            android:id="@+id/action_fragA_to_fragB"
+            app:destination="@id/fragB" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragB"
+        android:name="com.gfq.mvvmtest.mvvm_fragment.FragB"
+        android:label="fragment_b"
+        tools:layout="@layout/fragment_b" />
+    <fragment
+        android:id="@+id/fragC"
+        android:name="com.gfq.mvvmtest.mvvm_fragment.FragC"
+        android:label="fragment_c"
+        tools:layout="@layout/fragment_c" >
+        <action
+            android:id="@+id/action_fragC_to_fragD"
+            app:destination="@id/fragD" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragD"
+        android:name="com.gfq.mvvmtest.mvvm_fragment.FragD"
+        android:label="fragment_d"
+        tools:layout="@layout/fragment_d" />
+    <fragment
+        android:id="@+id/fragAPlus"
+        android:name="com.gfq.mvvmtest.mvvm_fragment.FragAPlus"
+        android:label="FragAPlus" >
+        <action
+            android:id="@+id/action_fragAPlus_to_fragB"
+            app:destination="@id/fragB" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragE"
+        android:name="com.gfq.mvvmtest.refresh_rv.FragE"
+        android:label="FragE" />
+    <fragment
+        android:id="@+id/fragF"
+        android:name="com.gfq.mvvmtest.mvvm_fragment.FragF"
+        android:label="FragF" />
+</navigation>
